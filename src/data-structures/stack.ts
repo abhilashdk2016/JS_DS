@@ -20,17 +20,17 @@ export default class Stack<T> {
     }
 
     pop() {
-        if(this.isEmpty()) {
+        if (this.isEmpty()) {
             return null;
         }
         this.count--;
-        let element = this.items[this.count];
+        const element = this.items[this.count];
         delete this.items[this.count];
         return element;
     }
 
     peek() {
-        if(this.isEmpty()) {
+        if (this.isEmpty()) {
             return null;
         }
         return this.items[this.count - 1];
@@ -42,11 +42,11 @@ export default class Stack<T> {
     }
 
     toString() {
-        if(this.isEmpty()) {
+        if (this.isEmpty()) {
             return '';
         }
         let result = `${this.items[0]}`;
-        for(let i = 1; i < this.count; i++) {
+        for (let i = 1; i < this.count; i++) {
             result += `, ${this.items[i]}`;
         }
         return result;
