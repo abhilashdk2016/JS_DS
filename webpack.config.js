@@ -20,14 +20,14 @@ var PATHS = {
 
 const config = {
     entry: {
-        'DataStructureAndAlgorthm': [PATHS.entryPoint],
-        'DataStructureAndAlgorthm.min': [PATHS.entryPoint]
+        'DataStructureAndAlgorithm': [PATHS.entryPoint],
+        'DataStructureAndAlgorithm.min': [PATHS.entryPoint]
     },
     devtool: 'source-map',
     output: {
         path: PATHS.bundles,
         filename: '[name].js',
-        library: 'DataStructureAndAlgorthm',
+        library: 'DataStructureAndAlgorithm',
         libraryTarget: 'umd',
         umdNamedDefine: true
     },
